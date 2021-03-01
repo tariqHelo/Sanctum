@@ -54,7 +54,7 @@ class RegisterController extends BaseController
 
 
     public function logout(Request $request){
-        dd($request);
+       // dd(10);
         $request->user()->currentAccessToken()->delete();
         return response()->json([
             'status_code'=>200, 
